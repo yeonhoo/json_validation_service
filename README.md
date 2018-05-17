@@ -41,3 +41,16 @@ POST    /schema/:id                 controllers.HomeController.upload(id:String)
 POST    /validate/:id               controllers.HomeController.validate(id:String)
 GET     /schema/:id                 controllers.HomeController.download(id:String)
 ```
+
+## Online Demo instance
+
+You can check the running instance at 18.191.103.133
+
+Example : 
+``` 
+$ curl 18.191.103.133:80/schema/5 -X POST -d @test/schema/valid-schema.json 
+```
+Response: 
+```
+{"action":"uploadSchema","id":"5","status":"success"}
+```
