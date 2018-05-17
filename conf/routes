@@ -1,0 +1,3 @@
+POST    /schema/:id                 controllers.HomeController.upload(id:String)
+POST    /validate/:id               controllers.HomeController.validate(id:String)
+GET     /schema/:id                 controllers.HomeController.download(id:String)
